@@ -1,0 +1,30 @@
+{
+  "_comment": "Org graph baseline. Nodes are positions; level is auto-derived from tree depth (leaves=1, up=2,3...). Edges are reporting lines tagged by hierarchy_id, so parallel hierarchies and multi-parent (matrix) reporting are just extra edges. Editing this file (re)assigns roles; runtime changes go through the /admin API.",
+  "nodes": [
+    { "id": "3a", "label": "3a" },
+    { "id": "2a", "label": "2a" },
+    { "id": "2b", "label": "2b" },
+    { "id": "2x", "label": "2x" },
+    { "id": "1a", "label": "1a" },
+    { "id": "1b", "label": "1b" },
+    { "id": "1c", "label": "1c" }
+  ],
+  "edges": [
+    { "child": "2a", "parent": "3a", "hierarchy": "clinical" },
+    { "child": "2b", "parent": "3a", "hierarchy": "clinical" },
+    { "child": "1a", "parent": "2a", "hierarchy": "clinical" },
+    { "child": "1b", "parent": "2a", "hierarchy": "clinical" },
+    { "child": "1c", "parent": "2b", "hierarchy": "clinical" },
+
+    { "child": "2x", "parent": "3a", "hierarchy": "admin" },
+    { "child": "1a", "parent": "2x", "hierarchy": "admin" },
+    { "child": "1c", "parent": "2x", "hierarchy": "admin" }
+  ],
+  "users": [
+    { "username": "admin", "password": "123", "node": "3a" },
+    { "username": "alice", "password": "123", "node": "2a" },
+    { "username": "bob",   "password": "123",   "node": "1a" },
+    { "username": "carol", "password": "123", "node": "1c" },
+    { "username": "dave",  "password": "123",  "node": "2x" }
+  ]
+}

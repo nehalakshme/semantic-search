@@ -1,0 +1,15 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pytesseract==0.3.10
+pdf2image==1.16.3
+Pillow==10.1.0
+python-docx==1.1.0
+elasticsearch==8.11.1
+spacy==3.7.2
+langdetect==1.0.9
+dateparser==1.2.0
+python-multipart==0.0.6
+psycopg2-binary==2.9.9
+PyJWT==2.8.0
+sentence-transformers==2.7.0
+requests==2.31.0

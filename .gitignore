@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+_diag*.py
+
+# Node / frontend build
+node_modules/
+dist/
+.vite/
+
+# Environment
+.env
+
+# Leftover local uploads (files now live in PostgreSQL)
+data/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
